@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Log in</title>
-	<style>
-		h1{
-			color: red;
-			background-color:Black;
-		}
-	</style>
+	<title>Demo</title>
+<style>
+	body{
+		color: red;
+	}
+    	p{
+	      font-size: 30px;
+	      color: green;
+	 }
+</style>
 </head>
 <body>
-	<h1 class="nikhil"> Hello World</h1>
+	<h1 class="nikhil" onclick="fun()"> Hello World</h1>
 	<p></p>
 <script>
-	document.getElementByClass("nikhil").onclick(function(){
-		document.querySelector('p').innerHTML = "Clicked";
-	});
+	var h1 = document.getElementsByClassName("nikhil");
+	function fun(){
+	   document.querySelector('p').innerHTML = "Clicked";
+	};
 	
 </script>
 </body>
